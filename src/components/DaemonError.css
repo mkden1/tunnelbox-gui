@@ -1,0 +1,69 @@
+.daemon-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: var(--bg-base);
+  padding: 24px;
+}
+
+.daemon-error-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 400px;
+  gap: 12px;
+}
+
+.daemon-error-icon {
+  color: var(--danger);
+  margin-bottom: 4px;
+}
+
+.daemon-error-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.3px;
+}
+
+.daemon-error-message {
+  font-size: 13px;
+  color: var(--danger);
+  background: var(--danger-dim);
+  border: 1px solid var(--danger);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  width: 100%;
+  word-break: break-word;
+}
+
+.daemon-error-hint {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.daemon-error-hint code {
+  font-family: monospace;
+  color: var(--text-secondary);
+  background: var(--bg-elevated);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.daemon-error-retry {
+  margin-top: 4px;
+  padding: 9px 28px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 600;
+  transition: opacity 0.12s;
+}
+
+.daemon-error-retry:hover {
+  opacity: 0.88;
+}
