@@ -57,8 +57,6 @@ export function ProfileDetail({
     e.target.value = "";
   };
 
-  const hasWireGuardConf = profile.apps !== undefined; // placeholder — always true after import
-
   return (
     <div className="profile-detail">
       {/* Header */}

@@ -101,7 +101,6 @@ trait CommandExt {
 
 impl CommandExt for std::process::Command {
     fn creation_flags(&mut self, flags: u32) -> &mut Self {
-        use std::os::windows::process::CommandExt;
         std::os::windows::process::CommandExt::creation_flags(self, flags)
     }
 }
